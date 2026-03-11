@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MoonShyn — Trendy women's fashion blouses and weekend wear. Shop curated collections for the modern woman.">
+  <title>MoonShyn — Modern Women's Fashion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="index.html" class="nav-logo">Moon<span>Shyn</span></a>
+      <div class="nav-links" id="navLinks">
+        <div class="nav-dropdown">
+          <a href="shop.html" class="nav-link nav-dropdown-toggle">
+            Shop
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="shop.html">New Arrivals</a>
+            <a href="shop.html">Blouses</a>
+            <a href="shop.html">Sets</a>
+            <a href="shop.html">Dresses</a>
+            <a href="shop.html">Sale</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="collections.html" class="nav-link nav-dropdown-toggle">
+            Collections
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="collections.html">Spring Edit</a>
+            <a href="collections.html">Weekend Luxe</a>
+            <a href="collections.html">Night Out</a>
+            <a href="collections.html">Basics</a>
+          </div>
+        </div>
+        <a href="lookbook.html" class="nav-link">Lookbook</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="#" class="nav-cart" id="cartIcon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 01-8 0"></path>
+        </svg>
+        <span class="nav-cart-badge">2</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop All</a>
+    <a href="shop.html">New Arrivals</a>
+    <a href="shop.html">Blouses</a>
+    <a href="shop.html">Sets</a>
+    <a href="shop.html">Dresses</a>
+    <a href="shop.html">Sale</a>
+    <a href="collections.html">Collections</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="heroSection">
+    <div class="hero-bg" style="background-image: url('images/hero-banner.png')"></div>
+    <div class="hero-content fade-in">
+      <p class="hero-subtitle">Spring / Summer 2026</p>
+      <h1>Effortless Elegance,<br>Redefined</h1>
+      <p class="hero-text">Discover curated pieces designed for the modern woman — from brunch to the night out.</p>
+      <div class="hero-buttons">
+        <a href="shop.html" class="btn btn-primary btn-lg">Shop New Arrivals</a>
+        <a href="lookbook.html" class="btn btn-white">View Lookbook</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      Scroll
+    </div>
+  </section>
+
+  <!-- ========== FEATURED COLLECTION GRID ========== -->
+  <section class="section" id="featuredCollection">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="subtitle">Curated For You</p>
+        <h2>Featured Collection</h2>
+        <p>Hand-picked pieces that embody effortless style and modern femininity.</p>
+      </div>
+      <div class="grid grid-3 fade-in">
+        <!-- Product Card 1 -->
+        <div class="product-card" onclick="location.href='product.html'">
+          <div class="product-card-image">
+            <img src="images/product-1.png" alt="Rose Satin Blouse">
+            <div class="product-card-overlay">
+              <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+            </div>
+            <span class="product-card-badge badge-new">New</span>
+            <button class="product-card-wishlist" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+            </button>
+          </div>
+          <div class="product-card-info">
+            <p class="product-card-name">Rose Satin Blouse</p>
+            <p class="product-card-price">$78.00</p>
+            <div class="product-card-colors">
+              <span class="color-dot" style="background:#E8B4C5"></span>
+              <span class="color-dot" style="background:#2A1A3D"></span>
+              <span class="color-dot" style="background:#F8F1F1"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card" onclick="location.href='product.html'">
+          <div class="product-card-image">
+            <img src="images/product-2.png" alt="Lavender Wrap Dress">
+            <div class="product-card-overlay">
+              <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+            </div>
+            <button class="product-card-wishlist" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+            </button>
+          </div>
+          <div class="product-card-info">
+            <p class="product-card-name">Lavender Wrap Dress</p>
+            <p class="product-card-price">$112.00</p>
+            <div class="product-card-colors">
+              <span class="color-dot" style="background:#C4A6D9"></span>
+              <span class="color-dot" style="background:#1A1A1A"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card" onclick="location.href='product.html'">
+          <div class="product-card-image">
+            <img src="images/product-3.png" alt="Purple Satin Cami">
+            <div class="product-card-overlay">
+              <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+            </div>
+            <span class="product-card-badge badge-sale">-20%</span>
+            <button class="product-card-wishlist" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+            </button>
+          </div>
+          <div class="product-card-info">
+            <p class="product-card-name">Purple Satin Cami</p>
+            <p class="product-card-price">$58.00 <span class="original-price">$72.00</span></p>
+            <div class="product-card-colors">
+              <span class="color-dot" style="background:#2A1A3D"></span>
+              <span class="color-dot" style="background:#E8B4C5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-2xl);" class="fade-in">
+        <a href="shop.html" class="btn btn-secondary">Shop Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BEST SELLERS CAROUSEL ========== -->
+  <section class="section" style="background: var(--color-white);" id="bestSellers">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="subtitle">Most Loved</p>
+        <h2>Best Sellers</h2>
+        <p>The pieces our community can't stop wearing.</p>
+      </div>
+      <div class="carousel-wrapper fade-in">
+        <div class="carousel-track" id="bestSellersCarousel">
+          <!-- Best Seller 1 -->
+          <div class="product-card" onclick="location.href='product.html'">
+            <div class="product-card-image">
+              <img src="images/product-1.png" alt="Rose Satin Blouse">
+              <div class="product-card-overlay">
+                <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+              </div>
+              <button class="product-card-wishlist" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-name">Rose Satin Blouse</p>
+              <p class="product-card-price">$78.00</p>
+            </div>
+          </div>
+          <!-- Best Seller 2 -->
+          <div class="product-card" onclick="location.href='product.html'">
+            <div class="product-card-image">
+              <img src="images/product-2.png" alt="Lavender Wrap Dress">
+              <div class="product-card-overlay">
+                <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+              </div>
+              <button class="product-card-wishlist" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-name">Lavender Wrap Dress</p>
+              <p class="product-card-price">$112.00</p>
+            </div>
+          </div>
+          <!-- Best Seller 3 -->
+          <div class="product-card" onclick="location.href='product.html'">
+            <div class="product-card-image">
+              <img src="images/product-3.png" alt="Purple Satin Cami">
+              <div class="product-card-overlay">
+                <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+              </div>
+              <button class="product-card-wishlist" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-name">Purple Satin Cami</p>
+              <p class="product-card-price">$58.00</p>
+            </div>
+          </div>
+          <!-- Best Seller 4 -->
+          <div class="product-card" onclick="location.href='product.html'">
+            <div class="product-card-image">
+              <img src="images/product-4.png" alt="Linen Lounge Set">
+              <div class="product-card-overlay">
+                <button class="btn btn-white btn-sm product-card-quick-add">Quick Add</button>
+              </div>
+              <button class="product-card-wishlist" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-name">Linen Lounge Set</p>
+              <p class="product-card-price">$134.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous" onclick="carouselPrev('bestSellersCarousel')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-btn carousel-btn-next" aria-label="Next" onclick="carouselNext('bestSellersCarousel')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSTAGRAM FEED ========== -->
+  <section class="section" id="instagramFeed">
+    <div class="container-wide">
+      <div class="section-header fade-in">
+        <p class="subtitle">Follow The Vibes</p>
+        <h2>#MoonShynStyle</h2>
+        <p>Tag us @moonshyn for a chance to be featured.</p>
+      </div>
+      <div class="instagram-grid fade-in">
+        <div class="instagram-item">
+          <img src="images/product-1.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="images/product-2.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="images/product-3.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="images/product-4.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="images/lookbook-1.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="images/hero-banner.png" alt="Instagram post">
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-xl);" class="fade-in">
+        <a href="https://instagram.com" class="btn btn-secondary" target="_blank" rel="noopener">Follow @moonshyn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EMAIL CAPTURE / NEWSLETTER ========== -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-content fade-in-left">
+        <p class="subtitle">Stay In The Loop</p>
+        <h2>Get 15% Off Your First Order</h2>
+        <p>Join the MoonShyn community for early access to new drops, exclusive deals, and style inspiration.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value='Thank you! ✨'; this.querySelector('button').textContent='Joined!'">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+        <p class="newsletter-proof">Join <span>12,400+</span> women who are already part of the shyn.</p>
+      </div>
+      <div class="newsletter-image" style="background-image: url('images/lookbook-1.png')"></div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="color: white;">Moon<span>Shyn</span></a>
+          <p>Effortless elegance for the modern woman. Curated pieces designed for brunch, weekends, and every moment in between.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.11v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0012.13-2.56V8.1a8.16 8.16 0 004.72 1.5v-3.4a4.85 4.85 0 01-.41.49z"/></svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 4.7 2.7 8.7 6.6 10.7-.1-.8-.2-2.1 0-3l1.4-5.8s-.4-.7-.4-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-1 3.7-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.2 0-2.7-1.9-4.6-4.7-4.6-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2 .8 2.5.1.1.1.2.1.3 0 .2-.1.5-.2.6H9.5c-.1 0-.2-.1-.2-.2-.4-1.6-.6-3.2-.6-3.3 0-2.7 2-5.2 5.7-5.2 3 0 5.3 2.1 5.3 5 0 3-1.9 5.4-4.4 5.4-.9 0-1.7-.5-2-1l-.5 2c-.2.8-.7 1.7-1.1 2.3.8.3 1.7.4 2.6.4 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">New Arrivals</a>
+          <a href="shop.html">Blouses</a>
+          <a href="shop.html">Sets</a>
+          <a href="shop.html">Dresses</a>
+          <a href="shop.html">Sale</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="lookbook.html">Lookbook</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="color: rgba(255,255,255,0.65); font-size: 14px; margin-bottom: 12px;">Get style tips and exclusive offers straight to your inbox.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email">
+            <button type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MoonShyn. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BOTTOM NAV (Mobile) ========== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="bottom-nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Home
+      </a>
+      <a href="shop.html" class="bottom-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg>
+        Shop
+      </a>
+      <a href="#" class="bottom-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
+        Cart
+      </a>
+      <a href="#" class="bottom-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        Account
+      </a>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

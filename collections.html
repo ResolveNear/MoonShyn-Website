@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore MoonShyn's curated fashion collections — from Spring Edit to Night Out, find your perfect vibe.">
+  <title>Collections — MoonShyn</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+      <a href="index.html" class="nav-logo">Moon<span>Shyn</span></a>
+      <div class="nav-links" id="navLinks">
+        <div class="nav-dropdown"><a href="shop.html" class="nav-link nav-dropdown-toggle">Shop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="nav-dropdown-menu"><a href="shop.html">New Arrivals</a><a href="shop.html">Blouses</a><a href="shop.html">Sets</a><a href="shop.html">Dresses</a><a href="shop.html">Sale</a></div></div>
+        <div class="nav-dropdown"><a href="collections.html" class="nav-link nav-dropdown-toggle active">Collections <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="nav-dropdown-menu"><a href="collections.html">Spring Edit</a><a href="collections.html">Weekend Luxe</a><a href="collections.html">Night Out</a><a href="collections.html">Basics</a></div></div>
+        <a href="lookbook.html" class="nav-link">Lookbook</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="#" class="nav-cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg><span class="nav-cart-badge">2</span></a>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="shop.html">Shop All</a><a href="collections.html">Collections</a><a href="lookbook.html">Lookbook</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="page-banner-bg"></div>
+    <div class="page-banner-content">
+      <div class="breadcrumbs"><a href="index.html">Home</a><span class="separator">/</span><span>Collections</span></div>
+      <h1>Our Collections</h1>
+    </div>
+  </section>
+
+  <!-- Collections Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="subtitle">Curated Edits</p>
+        <h2>Shop by Collection</h2>
+        <p>Each collection is thoughtfully curated to match your mood, your plans, and your vibe.</p>
+      </div>
+
+      <div class="grid grid-2" style="gap:var(--space-xl);">
+        <!-- Collection 1 - Spring Edit -->
+        <div class="collection-card fade-in" onclick="location.href='shop.html'">
+          <img src="images/product-1.png" alt="Spring Edit Collection">
+          <div class="collection-card-overlay">
+            <p class="subtitle" style="font-size:11px; margin-bottom:4px;">Season's Best</p>
+            <h3>The Spring Edit</h3>
+            <p>Fresh florals and soft pastels for the new season.</p>
+            <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Collection 2 - Weekend Luxe -->
+        <div class="collection-card fade-in" onclick="location.href='shop.html'">
+          <img src="images/product-4.png" alt="Weekend Luxe Collection">
+          <div class="collection-card-overlay">
+            <p class="subtitle" style="font-size:11px; margin-bottom:4px;">Effortless Comfort</p>
+            <h3>Weekend Luxe</h3>
+            <p>Elevated loungewear for lazy Sundays and beyond.</p>
+            <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Collection 3 - Night Out -->
+        <div class="collection-card fade-in" onclick="location.href='shop.html'">
+          <img src="images/product-3.png" alt="Night Out Collection">
+          <div class="collection-card-overlay">
+            <p class="subtitle" style="font-size:11px; margin-bottom:4px;">After Dark</p>
+            <h3>Night Out</h3>
+            <p>Statement pieces that turn heads after sunset.</p>
+            <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Collection 4 - Basics -->
+        <div class="collection-card fade-in" onclick="location.href='shop.html'">
+          <img src="images/product-2.png" alt="Essentials Collection">
+          <div class="collection-card-overlay">
+            <p class="subtitle" style="font-size:11px; margin-bottom:4px;">Wardrobe Staples</p>
+            <h3>The Essentials</h3>
+            <p>Timeless basics you'll reach for every single day.</p>
+            <a href="shop.html" class="btn btn-white btn-sm">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collection Banner -->
+  <section class="newsletter" style="margin-bottom:0;">
+    <div class="newsletter-inner">
+      <div class="newsletter-content fade-in-left">
+        <p class="subtitle">Limited Drop</p>
+        <h2>The MoonShyn x Summer Capsule</h2>
+        <p>An exclusive 12-piece capsule collection designed for your most sun-soaked moments. Launching April 1st — sign up for early access.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✨ You\'re in!';">
+          <input type="email" placeholder="Get early access" required>
+          <button type="submit" class="btn btn-primary btn-sm">Notify Me</button>
+        </form>
+      </div>
+      <div class="newsletter-image" style="background-image:url('images/lookbook-1.png');"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo" style="color:white;">Moon<span>Shyn</span></a><p>Effortless elegance for the modern woman.</p><div class="footer-social"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4C4 3.5 4.4 3.2 5 3c.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM18.4 6.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.11v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0012.13-2.56V8.1a8.16 8.16 0 004.72 1.5v-3.4a4.85 4.85 0 01-.41.49z"/></svg></a></div></div>
+        <div class="footer-col"><h4>Shop</h4><a href="shop.html">New Arrivals</a><a href="shop.html">Blouses</a><a href="shop.html">Dresses</a><a href="shop.html">Sale</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="lookbook.html">Lookbook</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Newsletter</h4><p style="color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:12px;">Exclusive offers straight to your inbox.</p><form class="footer-newsletter-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email"><button type="submit">Go</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 MoonShyn. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Shipping</a></div></div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav"><div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Home</a>
+    <a href="shop.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg>Shop</a>
+    <a href="#" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>Cart</a>
+    <a href="#" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Account</a>
+  </div></nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
